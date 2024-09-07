@@ -1,0 +1,81 @@
+.container{
+    flex: auto;
+    background-color: rgb(255, 214, 214);
+    width: 95vw;
+    border-radius: 4px;
+     
+    
+}
+.paragraph{
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+.main-heading {
+  text-align: center;
+  color: red;
+  text-decoration: solid;
+  font-stretch: semi-expanded;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 60px;
+  flex: content;
+}
+.images{
+  display: flex;
+  justify-content: center; /* Space evenly between images */
+  align-items: center; /* Center images vertically */
+  height: 100vh; /* Full screen height */
+  width: 95vw; /* Full screen width */
+  
+}
+
+.images img {
+  flex: 1; /* All images will take equal space */
+  object-fit: cover; /* Crop images to fit in the given space */
+  height: 70%; /* Full height of the container */
+  width: 80%; /* Full width of the container */
+
+}
+
+
+.paragraph-2{
+  flex: 1;
+  text-align: justify;
+  margin-left: 8px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  flex-wrap: wrap;
+}
+
+.nested-container{
+  
+    display: flex;
+    justify-content: center;
+  
+}
+
+.text-image-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 20px; /* Ye padding aap change kar sakte hain */
+  max-width: 1200px; /* Maximum width set karne ke liye */
+}
+
+.video-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+}
+
+.video-wrapper video {
+  max-width: 100%;
+  height: auto;
+  min-height: 300px;
+  border-radius: 8px; /* Optional: Video ke corner round karne ke liye */
+}

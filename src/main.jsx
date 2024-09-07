@@ -2,34 +2,46 @@ import React from 'react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter , RouterProvider} from 'react-router-dom'
-import Donation from './components/Donation'
-import Home from './components/Home'
 import './index.css'
-import Root from './Root'
+import Root from './routes/Root'
+import Donation from './routes/Donation'
+import Home from './routes/Home'
+import Compaign from './routes/Compaign'
+import Contact from './routes/Contact'
+
 
 
 
 const router = createBrowserRouter([
   
   {
-    path:"/",
+    path:"",
     element:<Root/>,
+  
 
     children:[
+      {
+        path:"/",
+        element:<Home/>
+       },
        {
        path:"/donation",
-       element:<Donation/>
+      element:<Donation/>
   },
   {
-    path:"/home",
-    element:<Home/>
+    path:"/compaign",
+    element:<Compaign/>
+
+  },
+  
+  {
+    path:"/contact",
+    element:<Contact/>
   }
+  
     ]
   },
  
-  
-
-
 ])
 
 
