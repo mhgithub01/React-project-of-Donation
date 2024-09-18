@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom';
 import "./Root.css"
 const Root = () => {
   return (
-    <>    <header className="header">
+    <>    
+    <div className='top'>
+    <header className="header">
     <div className="header__container">
       <div className="header__logo">
         <Link to="/">PEOPLE</Link>
@@ -22,7 +24,9 @@ const Root = () => {
       </div>
     </div>
     
+    
   </header>
+  </div>
   <main>
         <Outlet />
       </main>
@@ -32,6 +36,7 @@ const Root = () => {
   <p style={{fontFamily:"cursive"}}>Copyright © 2024 TenWeb. All rights reserved.</p> 
   Privacy Terms of Service SLA Report Abuse Domain Name Services Agreement
       </footer>
+     
   </>
 
   );

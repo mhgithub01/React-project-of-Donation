@@ -1,3 +1,27 @@
-.compaign{
-   margin: auto;
+.container{
+    flex: auto;
+    background-color: rgb(255, 214, 214);
+    width: 95vw;
+    border-radius: 4px;
+    
+     
+    
 }
+
+h2{
+   color: red;
+   font-size: 47px;
+}
+.content {
+   display: flex;
+   align-items: flex-start; /* Align text and image at the top */
+   gap: 20px; /* Space between paragraph and image */
+   text-align: center;
+  
+ }
+ 
+ .content img {
+   max-width: 300px; /* Adjust the width of the image */
+   height: auto; /* Maintain aspect ratio */
+   padding: 10px;
+ }

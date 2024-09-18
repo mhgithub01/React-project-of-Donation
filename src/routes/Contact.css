@@ -4,11 +4,16 @@
     width: 95vw;
     text-align: center;
     border-radius: 4px;
+    
 }
 
+.child-1 h1{
+    font-size: 47px;
+}
 .child-1{
-    padding-top: 5px;
+  
     padding-bottom: 4.5%;
+   
     
 }
 

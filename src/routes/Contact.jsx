@@ -16,11 +16,13 @@ const Contact = () => {
        <h3>Adress</h3>
       
         <ul>
+
           <li> <b>Headoffice:</b> Karachi Baldia Town 24# Market 13 #Building Near Khan Chowk </li>
           <li><b>Branch 1: </b>Islamabad </li>
           <li><b>Branch 2: </b>Peshawar </li>
           <li><b>Branch 3: </b>Kabul</li>
         </ul>
+        
       </div>
           </div>
   );
