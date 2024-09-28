@@ -11,10 +11,13 @@ const Donation = () => {
   const [email, setEmail] = useState("");
   const [donate, setDonate] = useState("");
 
- 
-
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast.error("Please enter a valid email address.");
+      return;
     // Handle form submission or validation here
     console.log(firstName, lastName, country, email, donate);
     setFirstName("");
@@ -22,6 +25,22 @@ const Donation = () => {
     setCountry("");
     setEmail("");
     setDonate("");
+
+   
+    }
+
+    if (isNaN(donate) || donate < 1) {
+      toast.error("Donation amount must be at least $1.");
+      return;
+  }
+
+  console.log(firstName, lastName, country, email, donate);
+  setFirstName("");
+  setLastName("");
+  setCountry("");
+  setEmail("");
+  setDonate("");
+
 
     toast("Thanks for your Donation!");
 };
@@ -53,7 +72,7 @@ const Donation = () => {
         </div>
         <div className="form-group">
           <label>Donate$:</label>
-          <input type="text" id="donate" name="donate" value={donate} onChange={(e) => setDonate(e.target.value)}/>
+          <input type="text" id="donate" name="donate" value={donate}  onChange={(e) => setDonate(e.target.value.replace(/[^0-9]/g, ''))}/>
         </div>
         <div>
         <button type="submit" onClick={handleSubmit} disabled={!firstName || !lastName || !email || donate <= 0}>Donate Now</button>
@@ -62,6 +81,6 @@ const Donation = () => {
       </form>
     </div>
   );
-};
+}
 
 export default Donation;

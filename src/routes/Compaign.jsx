@@ -6,7 +6,7 @@ const Compaign = () => {
     <div>
       <div className="container">
         <h2>Our <span style={{color:"black"}}>Compaigns</span> Details</h2>
-        <p>Here is some information about our campaigns.</p>
+        <p style={{fontSize:"22px"}}>Here is some information about our campaigns.</p>
         <div className="content">
           <p>
             Our first All Indonesian campaign will be held in Bengkulu, formerly

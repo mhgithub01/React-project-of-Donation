@@ -17,11 +17,17 @@ h2{
    align-items: flex-start; /* Align text and image at the top */
    gap: 20px; /* Space between paragraph and image */
    text-align: center;
-  
  }
  
+
+.content p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  line-height: 45px;
+}
+
  .content img {
    max-width: 300px; /* Adjust the width of the image */
-   height: auto; /* Maintain aspect ratio */
+   height: 360px; /* Maintain aspect ratio */
    padding: 10px;
  }

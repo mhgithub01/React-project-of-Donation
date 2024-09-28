@@ -33,6 +33,9 @@ body::before {
   padding: 8px 0;
   background-color: white;
   border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
    
 
   
@@ -119,12 +122,43 @@ body::before {
   
   footer {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 1px;
-    background-color: white; 
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   background-color: white; 
     border-top: 1px solid #ddd;
      font-size: small;
      font-family: monospace;
   }
+
+
+
+  /* Modal Styling */
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
+}
